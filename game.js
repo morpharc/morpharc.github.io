@@ -68,7 +68,7 @@ var musicOff = game.newImageObject({
 
 var xp = game.newImageObject({
 	x : 600, y : 200,
-	file : 'img/xp.png',
+	file : 'img/hp.png',
 	h : 200*r, w : 200*r
 });
 
@@ -106,7 +106,7 @@ player.gr = 1;
 player.speed = point(0, 0);
 player.health = 100;
 
-pjs.system.setTitle('THE BEST GAME EVER'); // Set Title for Tab or Window
+pjs.system.setTitle('Ninja runner'); // Set Title for Tab or Window
 
 var map = {
 	width : 45*r,
@@ -728,8 +728,8 @@ game.newLoop('instruct', function () {
 });
 
 game.newLoopFromClassObject('menu', new Menu(pjs, {
-	name  : 'THE BEST GAME EVER',
-	author : 'BeerkO inc. All rights reserved©',
+	name  : 'Ninja runner',
+	author : 'BeerkO inc. All rights reserved ©',
 	radius : 15,
 	items : {
 		game  : 'Start level 1',
